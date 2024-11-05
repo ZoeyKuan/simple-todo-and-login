@@ -18,7 +18,10 @@ const password = document.querySelector('#password');
 const form = document.querySelector('.form-container');
 form.addEventListener('keypress', (e) => {
  // checks if user has pressed the enter key as keycode 13 is enter
+ console.log(e.keyCode)
  if (e.keyCode == 13){
+
+  // because the for loop is O at the start
   for (i=0; i<storedUser().length; i++){
    
    // LOGIN
@@ -37,6 +40,7 @@ form.addEventListener('keypress', (e) => {
     for(c=0;c<checked.length;c++) checked[c].style.display = 'none';
     for(c=0;c<emsg.length;c++) emsg[c].style.display = 'flex';
    }
+   
   }
  }
 });
@@ -59,9 +63,10 @@ function loggingIn(i, key){
 }
 
 document.querySelector('button').addEventListener('click', () => {
- if (window.location.pathname == '/login.html') {
-  window.location.assign('register.html');
+ console.log(window.location.pathname);
+ if (window.location.pathname == '/login_system/login.html') {
+  window.location.assign('/login_system/register.html');
  } else {
-  window.location.assign('login.html');
+  window.location.assign('/login_system/login.html');
  }
 });
