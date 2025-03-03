@@ -5,7 +5,7 @@ Use this with reference to make the best of your learning.
 
 Copy-pasting makes you learn less than if you code it out yourself!
 
-### Note taking app does not all user to save more than once as its to force the user to organize and use up all the space.
+### Note taking app: Does not allow multiple saves as its to force the user to organize and use up all the space.
 - Font selection, copy text, and word counter for better user experience
 - Minimalistic design to avoid distractions
 - Grey background for eye friendliness
